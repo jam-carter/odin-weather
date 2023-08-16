@@ -15,10 +15,10 @@ search.addEventListener('click', (event) => {
             const weatherInfo = document.querySelector('.content-weather-info');
             weatherInfo.innerHTML = `
                 <p class="weather-city-name">${data.name}</p>
-                <p class="weather-temperature">${data.main.temp}°C</p>
-                <p class="weather-description">${data.weather[0].description}</p>
-                <p class="weather-humidity">${data.main.humidity}%</p>
-                <p class="weather-wind">${data.wind.speed} m/s</p>
+                <p class="weather-temperature">Temperature: ${data.main.temp}°C</p>
+                <p class="weather-description">Coverage: ${data.weather[0].description}</p>
+                <p class="weather-humidity">Humidity: ${data.main.humidity}%</p>
+                <p class="weather-wind">Wind Speed: ${data.wind.speed} m/s</p>
             `;
         })
         .catch(error => {
