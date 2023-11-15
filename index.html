@@ -18,13 +18,33 @@
             </form>
             <div class="content-weather-info">
                 <p class="weather-city-name" id="cityName"></p>
-                <p class="weather-temperature" id="temperature"></p>
-                <p class="weather-description" id="description"></p>
-                <p class="weather-humidity" id="humidity"></p>
-                <p class="weather-wind" id="wind"></p>
+                <div class="content-top">
+                    <div class="content-top-left">
+                        <p class="weather-temperature" id="temperature"></p>
+                        <p class="weather-feels-like" id="feelsLike"></p>
+                    </div>
+                    <div class="content-top-right">
+                        <p class="weather-min-temp" id="minTemp"></p>
+                        <p class="weather-max-temp" id="maxTemp"></p>
+                    </div>            
+                </div>
+
+                <div class="content-bottom">
+                    <div class="content-bottom-left">
+                        <p class="weather-description" id="description"></p>
+                        <p class="weather-humidity" id="humidity"></p>
+                    </div>
+                    <div class="content-bottom-right">
+                        <p class="weather-wind" id="wind"></p>
+                        <p class="weather-pressure" id="pressure"></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script src="weatherApp.js"></script>
 </body>
 </html>
+
+
+
