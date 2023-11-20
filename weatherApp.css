@@ -46,10 +46,18 @@
 
 #searchButton {
     margin-left: 10px;
-    background-color: #000000;
+    background-color: #2E2F2F;
+    background-color: ;
     color: #ffffff;
     border: none;
     padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #1c1d1d;
+    color: #ffffff;
 }
 
 .search-bar {
@@ -82,34 +90,41 @@
 .content-top,
 .content-bottom {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
 }
 
+.left-container {
+    margin-left: 40px;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.right-container {
+    margin-left: 40px;
+    font-size: 22px;
+    padding-bottom: 40px;
+}
+
 .weather-city-name {
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
     padding-bottom: 18px;
 }
 
-.weather-temperature {
-    font-size: 34px;
-    padding-bottom: 6px;
-}
-
+.weather-temperature,
 .weather-description {
-    font-size: 34px;
+    font-size: 36px;
     padding-bottom: 6px;
 }
 
-
-.weather-min-temp
-.weather-max-temp
-.weather-feels-like
-.weather-humidity
-.weather-wind
+.weather-min-temp,
+.weather-max-temp,
+.weather-feels-like,
+.weather-humidity,
+.weather-wind,
 .weather-pressure {
     font-size: 26px;
     padding-bottom: 6px;

@@ -11,8 +11,9 @@ search.addEventListener('click', (event) => {
     .then(response => response.json())
     .then(data => {
         console.log(data);
-        const weatherInfo = document.querySelector('.content-weather-info');
 
+        // Clear exisiting weather data
+        weatherInfo.innerHTML  
         // Create the city name container
         const cityNameContainer = document.createElement('div');
         cityNameContainer.classList.add('weather-city-name');
